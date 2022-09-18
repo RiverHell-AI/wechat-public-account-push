@@ -61,20 +61,16 @@ export const config = {
     {
       name: "テスト", // 想要发送的人的名字
       id: "ol73p6T27itm_8SRY920z5Yas36Q", // 用户列表微信号
-      useTemplateId: "_PZ4m0B0BUNJqTMq-gS3k9U2ge_mjpnAZVrc1FpdNvo", // 模板ID
+      useTemplateId: "Usyp5xofzK8GtDeDnm3YAgyOwnXhbRGpu2sGmG0Hejk", // 模板ID
       province: "江苏", // 所在省份
       city: "南京", // 所在城市
       horoscopeDate: '06-28', // 新历生日, 仅用作获取星座运势
       horoscopeDateType: '今日', // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
-      openUrl: "https://wangxinleo.cn", // 点击详情后跳转的页面
+      openUrl: "https://riverhell-ai.github.io/", // 点击详情后跳转的页面
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {"type": "*生日", "name": "テスト", "year": "2001", "date": "05-06"},
-        {"type": "节日", "name": "纪念日", "year": "2022", "date": "06-18"},
-        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {"type": "生日", "name": "テスト", "year": "2001", "date": "06-28"},
-        {"type": "节日", "name": "纪念日", "year": "2022", "date": "06-18"},
+        {"type": "*生日", "name": "テスト", "year": "2001", "date": "05-08"},
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同
       customizedDateList: [
@@ -88,13 +84,24 @@ export const config = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: "_PZ4m0B0BUNJqTMq-gS3k9U2ge_mjpnAZVrc1FpdNvo",
+  CALLBACK_TEMPLATE_ID: "Usyp5xofzK8GtDeDnm3YAgyOwnXhbRGpu2sGmG0Hejk",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
     {
       name: "JC",
       id: "ol73p6T27itm_8SRY920z5Yas36Q", // 用户列表微信号
+      province: "江苏",
+      city: "南京",
+      horoscopeDate: '06-28',
+      horoscopeDateType: '今日',
+      openUrl: "https://riverhell-ai.github.io/",
+      festivals: [
+        {"type": "*生日", "name": "テスト", "year": "2001", "date": "05-08"},
+      ],
+      customizedDateList: [
+        {"keyword": "love_day", date: "2022-06-18"},
+      ]
     },
   ],
 
@@ -128,12 +135,7 @@ export const config = {
    */
   FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-    {"type": "*生日", "name": "テスト", "year": "2001", "date": "05-06", isShowAge: true},
-    {"type": "节日", "name": "纪念日", "year": "2022", "date": "06-18"},
-    // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-    {"type": "生日", "name": "テスト", "year": "2001", "date": "06-28", isShowAge: true},
-    {"type": "节日", "name": "纪念日", "year": "2022", "date": "06-18"},
-    // 你可以不断按格式往下增加
+    {"type": "*生日", "name": "テスト", "year": "2001", "date": "05-08", isShowAge: true},
     // ...
   ],
 
@@ -142,7 +144,7 @@ export const config = {
    * 如果为3, 则仅展示“将要到达” 的3个重要节日提醒，剩下的将被忽略
    * 如果为0, 则默认展示全部
    */
-  FESTIVALS_LIMIT: 4,
+  FESTIVALS_LIMIT: 2,
 
   /** 日期相关 */
 
