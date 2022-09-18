@@ -91,16 +91,26 @@ export const config = {
       ]
     },
     {
-      name: "老婆1",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
+      name: "テスト",
+      id: "ol73p6T27itm_8SRY920z5Yas36Q",
+      useTemplateId: "PZ4m0B0BUNJqTMq-gS3k9U2ge_mjpnAZVrc1FpdNvo",
+      province: "江苏",
+      city: "南京",
+      horoscopeDate: '06-28',
+      horoscopeDateType: '今日',
       openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
+      festivals: [
+        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {"type": "*生日", "name": "テスト", "year": "2001", "date": "05-06"},
+        {"type": "节日", "name": "纪念日", "year": "2022", "date": "06-18"},
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {"type": "生日", "name": "テスト", "year": "2001", "date": "06-28"},
+        {"type": "节日", "name": "纪念日", "year": "2022", "date": "06-18"},
+      ],
+      customizedDateList: [
+        // 在一起的日子
+        {"keyword": "love_day", date: "2022-06-18"},
+      ]
     },
   ],
 
