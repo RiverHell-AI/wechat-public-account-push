@@ -3,8 +3,8 @@ export const config = {
    * 公众号配置
    */
 
-  APP_ID: "APPID",
-  APP_SECRET: "APPSECRET",
+  APP_ID: ${{ secrets.APPID }},
+  APP_SECRET: ${{ secrets.APPSECRET }},
 
   // 是否给文字设置多彩颜色, 和emoji不兼容
   // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
@@ -53,20 +53,20 @@ export const config = {
   USERS: [
     {
       name: "テスト", // 想要发送的人的名字
-      id: "USER_ID", // 用户列表微信号
+      id: ${{ secrets.USER_ID }}, // 用户列表微信号
       useTemplateId: "TEMPLATE_ID", // 模板ID
       province: "江苏", // 所在省份
       city: "南京", // 所在城市
-      horoscopeDate: 'BIRTHDAY', // 新历生日, 仅用作获取星座运势
+      horoscopeDate: ${{ secrets.BIRTHDAY }}, // 新历生日, 仅用作获取星座运势
       horoscopeDateType: '今日', // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
       openUrl: "https://riverhell-ai.github.io/", // 点击详情后跳转的页面
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
-        {"type": "生日", "name": "テスト", "year": "2001", "date": "BIRTHDAY"}, // 阳历生日
+        {"type": "生日", "name": "テスト", "year": "2001", "date": ${{ secrets.BIRTHDAY }}}, // 阳历生日
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同
       customizedDateList: [
-        {"keyword": "love_day", date: "ANNIVERSARY"}, // 在一起的日子
+        {"keyword": "love_day", date: ${{ secrets.ANNIVERSARY }}}, // 在一起的日子
       ]
     },
   ],
@@ -101,7 +101,7 @@ export const config = {
    */
   FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-    {"type": "*生日", "name": "テスト", "year": "2001", "date": "BIRTHDAY", isShowAge: true},
+    {"type": "*生日", "name": "テスト", "year": "2001", "date": ${{ secrets.BIRTHDAY }}, isShowAge: true},
     // ...
   ],
 
@@ -120,7 +120,7 @@ export const config = {
     * */
   CUSTOMIZED_DATE_LIST: [
     // 在一起的日子
-    {"keyword": "love_day", date: "ANNIVERSARY"},
+    {"keyword": "love_day", date: ${{ secrets.ANNIVERSARY }}},
   ],
 
   /** 插槽 */
