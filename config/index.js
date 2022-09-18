@@ -5,7 +5,7 @@ export const config = {
 
   APP_ID: "",
   APP_SECRET: "",
-  TEMPLATE_ID = "3k3rSIOCL2-mdZR3jP7PsDfzEHpfg2gAUkIiRhmR-es",
+  TEMPLATE_ID: "3k3rSIOCL2-mdZR3jP7PsDfzEHpfg2gAUkIiRhmR-es",
 
   // 是否给文字设置多彩颜色, 和emoji不兼容
   // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
