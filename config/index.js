@@ -55,26 +55,18 @@ export const config = {
   
 
   /**
-   * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔
+   * 接收公众号消息的微信号
    */
   USERS: [
     {
-      // 想要发送的人的名字
-      name: "テスト",
-      // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "ol73p6T27itm_8SRY920z5Yas36Q",
-      // 你想对他发送的模板消息的模板ID
-      useTemplateId: "PZ4m0B0BUNJqTMq-gS3k9U2ge_mjpnAZVrc1FpdNvo",
-      // 所在省份
-      province: "江苏",
-      // 所在城市
-      city: "南京",
-      // 新历生日, 仅用作获取星座运势, 格式必须
-      horoscopeDate: '06-28',
-      // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
-      horoscopeDateType: '今日',
-      // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
-      openUrl: "https://wangxinleo.cn",
+      name: "テスト", // 想要发送的人的名字
+      id: "ol73p6T27itm_8SRY920z5Yas36Q", // 用户列表微信号
+      useTemplateId: "PZ4m0B0BUNJqTMq-gS3k9U2ge_mjpnAZVrc1FpdNvo", // 模板ID
+      province: "江苏", // 所在省份
+      city: "南京", // 所在城市
+      horoscopeDate: '06-28', // 新历生日, 仅用作获取星座运势
+      horoscopeDateType: '今日', // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
+      openUrl: "https://wangxinleo.cn", // 点击详情后跳转的页面
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
@@ -84,32 +76,9 @@ export const config = {
         {"type": "生日", "name": "テスト", "year": "2001", "date": "06-28"},
         {"type": "节日", "name": "纪念日", "year": "2022", "date": "06-18"},
       ],
-      // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
+      // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同
       customizedDateList: [
-        // 在一起的日子
-        {"keyword": "love_day", date: "2022-06-18"},
-      ]
-    },
-    {
-      name: "テスト",
-      id: "ol73p6T27itm_8SRY920z5Yas36Q",
-      useTemplateId: "PZ4m0B0BUNJqTMq-gS3k9U2ge_mjpnAZVrc1FpdNvo",
-      province: "江苏",
-      city: "南京",
-      horoscopeDate: '06-28',
-      horoscopeDateType: '今日',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [
-        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {"type": "*生日", "name": "テスト", "year": "2001", "date": "05-06"},
-        {"type": "节日", "name": "纪念日", "year": "2022", "date": "06-18"},
-        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {"type": "生日", "name": "テスト", "year": "2001", "date": "06-28"},
-        {"type": "节日", "name": "纪念日", "year": "2022", "date": "06-18"},
-      ],
-      customizedDateList: [
-        // 在一起的日子
-        {"keyword": "love_day", date: "2022-06-18"},
+        {"keyword": "love_day", date: "2022-06-18"}, // 在一起的日子
       ]
     },
   ],
@@ -124,13 +93,9 @@ export const config = {
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
     {
-      // 一般都填自己
       name: "JC",
-      // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "ol73p6T27itm_8SRY920z5Yas36Q",
+      id: "ol73p6T27itm_8SRY920z5Yas36Q", // 用户列表微信号
     },
-    // 你可以不断按格式往下增加
-    // ...
   ],
 
   /**
@@ -139,10 +104,8 @@ export const config = {
 
   /** 天气相关 */
 
-  // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: "江苏",
-  // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: "南京",
+  PROVINCE: "江苏", // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
+  CITY: "南京", // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
 
   /** 重要节日相关 */
 
@@ -154,8 +117,8 @@ export const config = {
    * 如果日期使用阴历，请在 “生日” 或 "节日“ 前添加 * 符号
    * --- 阴历配置结束 ---
    * 
-   * 生日时，name填写想要展示的名字，你可以填“美丽可爱亲亲老婆”
-   * 节日时，name填写相应展示的节日，你可以填“被搭讪纪念日”
+   * 生日时，name填写想要展示的名字
+   * 节日时，name填写相应展示的节日
    * 
    * --- 是否展示周岁信息开始 ---
    * isShowAge: true 展示岁数, 仅type为生日生效
