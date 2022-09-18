@@ -101,7 +101,7 @@ export const config = {
    */
   FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-    {"type": "*生日", "name": "テスト", "year": "2001", "date": "06-28", isShowAge: true},
+    {"type": "*生日", "name": "トロルちゃん", "year": "2001", "date": "06-28", isShowAge: true},
     // ...
   ],
 
