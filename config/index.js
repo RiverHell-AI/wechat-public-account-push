@@ -5,6 +5,7 @@ export const config = {
 
   APP_ID: "",
   APP_SECRET: "",
+  TEMPLATE_ID = "3k3rSIOCL2-mdZR3jP7PsDfzEHpfg2gAUkIiRhmR-es",
 
   // 是否给文字设置多彩颜色, 和emoji不兼容
   // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
@@ -52,9 +53,9 @@ export const config = {
    */
   USERS: [
     {
-      name: "テスト", // 想要发送的人的名字
+      name: "トロルちゃん", // 想要发送的人的名字
       id: "ol73p6T27itm_8SRY920z5Yas36Q", // 用户列表微信号
-      useTemplateId: "Usyp5xofzK8GtDeDnm3YAgyOwnXhbRGpu2sGmG0Hejk", // 模板ID
+      useTemplateId: TEMPLATE_ID, // 模板ID
       province: "江苏", // 所在省份
       city: "南京", // 所在城市
       horoscopeDate: "06-28", // 新历生日, 仅用作获取星座运势
