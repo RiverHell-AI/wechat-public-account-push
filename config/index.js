@@ -70,7 +70,7 @@ export const config = {
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {"type": "*生日", "name": "テスト", "year": "2001", "date": "05-08"},
+        {"type": "*生日", "name": "テスト", "year": "2001", "date": "06-28"},
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同
       customizedDateList: [
@@ -89,19 +89,7 @@ export const config = {
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
     {
-      name: "JC",
       id: "ol73p6T27itm_8SRY920z5Yas36Q", // 用户列表微信号
-      province: "江苏",
-      city: "南京",
-      horoscopeDate: '06-28',
-      horoscopeDateType: '今日',
-      openUrl: "https://riverhell-ai.github.io/",
-      festivals: [
-        {"type": "*生日", "name": "テスト", "year": "2001", "date": "05-08"},
-      ],
-      customizedDateList: [
-        {"keyword": "love_day", date: "2022-06-18"},
-      ]
     },
   ],
 
@@ -135,7 +123,7 @@ export const config = {
    */
   FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-    {"type": "*生日", "name": "テスト", "year": "2001", "date": "05-08", isShowAge: true},
+    {"type": "*生日", "name": "テスト", "year": "2001", "date": "06-28", isShowAge: true},
     // ...
   ],
 
