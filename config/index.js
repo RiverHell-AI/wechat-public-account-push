@@ -61,7 +61,7 @@ export const config = {
     {
       name: "テスト", // 想要发送的人的名字
       id: "ol73p6T27itm_8SRY920z5Yas36Q", // 用户列表微信号
-      useTemplateId: "PZ4m0B0BUNJqTMq-gS3k9U2ge_mjpnAZVrc1FpdNvo", // 模板ID
+      useTemplateId: "_PZ4m0B0BUNJqTMq-gS3k9U2ge_mjpnAZVrc1FpdNvo", // 模板ID
       province: "江苏", // 所在省份
       city: "南京", // 所在城市
       horoscopeDate: '06-28', // 新历生日, 仅用作获取星座运势
@@ -88,7 +88,7 @@ export const config = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: "PZ4m0B0BUNJqTMq-gS3k9U2ge_mjpnAZVrc1FpdNvo",
+  CALLBACK_TEMPLATE_ID: "_PZ4m0B0BUNJqTMq-gS3k9U2ge_mjpnAZVrc1FpdNvo",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
