@@ -52,8 +52,26 @@ export const config = {
    */
   USERS: [
     {
-      name: "トロルちゃん", // 名字
+      name: "ジェーシーちゃん", // 名字
       id: "ol73p6T27itm_8SRY920z5Yas36Q", // 用户列表微信号
+      useTemplateId: "3k3rSIOCL2-mdZR3jP7PsDfzEHpfg2gAUkIiRhmR-es", // 模板ID
+      province: "江苏", // 所在省份
+      city: "南京", // 所在城市
+      horoscopeDate: "09-22", // 新历生日, 仅用作获取星座运势
+      horoscopeDateType: '今日', // 星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
+      openUrl: "https://riverhell-ai.github.io/", // 点击详情后跳转的页面
+      // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同
+      festivals: [
+        {"type": "生日", "name": "ジェーシーちゃん", "year": "2001", "date": "09-22"}, // 阳历生日
+      ],
+      // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同
+      customizedDateList: [
+        {"keyword": "love_day", date: "2022-06-18"}, // 在一起的日子
+      ]
+    },
+    {
+      name: "トロルちゃん", // 名字
+      id: "ol73p6bV_ynu8Ghbu3n3Eher-TeY", // 用户列表微信号
       useTemplateId: "3k3rSIOCL2-mdZR3jP7PsDfzEHpfg2gAUkIiRhmR-es", // 模板ID
       province: "江苏", // 所在省份
       city: "南京", // 所在城市
